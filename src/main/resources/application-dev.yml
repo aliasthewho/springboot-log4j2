@@ -1,0 +1,6 @@
+logging:
+    level:
+        root: DEBUG
+    file:
+        path: logs/
+    com.example: DEBUG

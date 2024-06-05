@@ -1,0 +1,10 @@
+spring:
+    profiles:
+        active: dev
+logging:
+    level:
+        root: INFO
+    file:
+        path: logs/
+    log4j2:
+        config: classpath:log4j2-spring.xml    
