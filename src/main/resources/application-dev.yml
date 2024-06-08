@@ -1,6 +1,16 @@
+spring:
+    config.activate.on-profile: dev
+management:
+    endpoints:
+        web:
+            exposure:
+                include: loggers
+    endpoint:
+        loggers:
+            enabled: true    
+
 logging:
+    # config: classpath:log4j2-spring.xml  
     level:
-        root: DEBUG
-    file:
-        path: logs/
-    com.example: DEBUG
+        root: ERROR
+        com.example.log4basis.api: INFO
